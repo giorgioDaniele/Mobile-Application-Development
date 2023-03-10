@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ForthTest$UserDefinedWords" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-03-10T12:18:30" hostname="balenablu" time="0.059">
+  <properties/>
+  <testcase name="can consist of built-in words" classname="ForthTest$UserDefinedWords" time="0.05"/>
+  <testcase name="can override other user-defined words" classname="ForthTest$UserDefinedWords" time="0.001"/>
+  <testcase name="execute in the right order" classname="ForthTest$UserDefinedWords" time="0.001"/>
+  <testcase name="errors if executing a non-existent word" classname="ForthTest$UserDefinedWords" time="0.003"/>
+  <testcase name="can define word that uses word with the same name" classname="ForthTest$UserDefinedWords" time="0.001"/>
+  <testcase name="can override built-in words" classname="ForthTest$UserDefinedWords" time="0.0"/>
+  <testcase name="cannot redefine numbers" classname="ForthTest$UserDefinedWords" time="0.001"/>
+  <testcase name="can override built-in operators" classname="ForthTest$UserDefinedWords" time="0.0"/>
+  <testcase name="can use different words with the same name" classname="ForthTest$UserDefinedWords" time="0.001"/>
+  <system-out><![CDATA[[dup-twice]
+[dup, dup]
+[foo]
+[dup]
+[foo]
+[dup, dup]
+[countup, 1, 2, 3]
+[]
+[foo, 10]
+[]
+[foo, foo, 1]
+[+]
+[]
+[swap, dup]
+[]
+[+, *]
+[foo, 5]
+[]
+[bar, foo]
+[]
+[foo, 6]
+[]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
